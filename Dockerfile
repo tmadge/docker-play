@@ -44,7 +44,7 @@ rm -rf /var/cache/oracle-jdk8-installer
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN echo "export PATH=$PATH:/opt/activator" >> /home/play/.bashrc
 # Define user home. Activator will store ivy2 and sbt caches on /home/play/Code volume
-RUN echo "export _JAVA_OPTIONS='-Duser.home=/home/play/Code'" >> /home/play/.bashrc
+#RUN echo "export _JAVA_OPTIONS='-Duser.home=/home/play/Code'" >> /home/play/.bashrc
 
 # Change user, launch bash
 USER play
